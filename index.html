@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./resonise.html" method="post">
+    <div>
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" pattern="\d{4}\{2}\{2}" required title="data formate should be yyyy-mm-dd" >
+        <br>
+        <label for="gmail">gmail</label>
+        <input type="text" id="gmail" name="gamil" pattern="[a-z\d._]+@[a-z]+{2,} []"  required="only should contatin  small letters numbers and sepical charaster"><br>
+        <label for="password">password</label>
+        <input type="text" name="password" id="password" pattern="(?=.*[a-z][A-Z](?=.*\d)+(@#$){8,16})" >
+
+        <br>
+        <input type="submit" value="submit">
+    </div>
+</form>
+</body>
+</html>
